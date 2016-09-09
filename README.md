@@ -11,12 +11,19 @@ Caso não tenham instalado o Ruby e suas dependências podem seguir este tutoria
 Gems utilizadas:
 
 [Cucumber](https://cucumber.io/)
+
 [Capybara](https://github.com/jnicklas/capybara)
+
 [Selenium-webdriver](https://github.com/seleniumhq/selenium)
+
 [Faker](https://github.com/stympy/faker)
+
 [Site_prism](https://github.com/natritmeyer/site_prism)
+
 [Rspec](http://rspec.info/)
+
 [Rails](http://rubyonrails.org/)
+
 [Pry](http://pryrepl.org/)
 
 
