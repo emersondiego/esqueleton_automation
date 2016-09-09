@@ -7,9 +7,7 @@ Caso não tenham instalado o Ruby e suas dependências podem seguir este tutoria
 [Tutorial](https://github.com/MyPersonalProjects/first-contact)
 
 ### Ferramentas
-
 Gems utilizadas:
-
 [Cucumber](https://cucumber.io/)
 [Capybara](https://github.com/jnicklas/capybara)
 [Selenium-webdriver](https://github.com/seleniumhq/selenium)
