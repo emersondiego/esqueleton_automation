@@ -8,14 +8,14 @@ Caso não tenham instalado o Ruby e suas dependências podem seguir este tutoria
 
 ### Ferramentas
 Gems utilizadas:
-*[Cucumber](https://cucumber.io/)
-*[Capybara](https://github.com/jnicklas/capybara)
-*[Selenium-webdriver](https://github.com/seleniumhq/selenium)
-*[Faker](https://github.com/stympy/faker)
-*[Site_prism](https://github.com/natritmeyer/site_prism)
-*[Rspec](http://rspec.info/)
-*[Rails](http://rubyonrails.org/)
-*[Pry](http://pryrepl.org/)
+* [Cucumber](https://cucumber.io/)
+* [Capybara](https://github.com/jnicklas/capybara)
+* [Selenium-webdriver](https://github.com/seleniumhq/selenium)
+* [Faker](https://github.com/stympy/faker)
+* [Site_prism](https://github.com/natritmeyer/site_prism)
+* [Rspec](http://rspec.info/)
+* [Rails](http://rubyonrails.org/)
+* [Pry](http://pryrepl.org/)
 
 Comandos mais utilizados:
 
@@ -33,7 +33,7 @@ Comandos mais utilizados:
     click('Link Text') # Click either a link or a button
     click('Button Value')
 ```
-
+```
 =Interacting with forms=
     fill_in('First Name', :with => 'John')
     fill_in('Password', :with => 'Seekrit')
@@ -43,7 +43,8 @@ Comandos mais utilizados:
     uncheck('A Checkbox')
     attach_file('Image', '/path/to/image.jpg')
     select('Option', :from => 'Select Box')
-
+```
+```
 =scoping=
     within("//li[@id='employee']") do
       fill_in 'Name', :with => 'Jimmy'
@@ -57,7 +58,8 @@ Comandos mais utilizados:
     within_table('Employee') do
       fill_in 'Name', :with => 'Jimmy'
     end
-
+```
+```
 =Querying=
     page.has_xpath?('//table/tr')
     page.has_css?('table tr.foo')
@@ -72,20 +74,24 @@ Comandos mais utilizados:
     find('//table/tr').click
     locate("//*[@id='overlay'").find("//h1").click
     all('a').each { |a| a[:href] }
-
+```
+```
 =Scripting=
     result = page.evaluate_script('4 + 4');
-
+```
+```
 =Debugging=
     save_and_open_page
-
+```
+```
 =Asynchronous JavaScript=
     click_link('foo')
     click_link('bar')
     page.should have_content('baz')
     page.should_not have_xpath('//a')
     page.should have_no_xpath('//a')
-
+```
+```
 =XPath and CSS=
     within(:css, 'ul li') { ... }
     find(:css, 'ul li').text
@@ -94,3 +100,4 @@ Comandos mais utilizados:
     within('ul li') { ... }
     find('ul li').text
     locate('input#name').value
+```
