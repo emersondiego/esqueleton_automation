@@ -102,4 +102,4 @@ Comandos mais utilizados:
     locate('input#name').value
 ```
 
-* [Referência e ©](https://github.com/Drelucas/test-bdd-functional)
+[©](https://github.com/Drelucas/test-bdd-functional)
