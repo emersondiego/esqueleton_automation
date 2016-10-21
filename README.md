@@ -101,3 +101,5 @@ Comandos mais utilizados:
     find('ul li').text
     locate('input#name').value
 ```
+
+* [Referência e ©](https://github.com/Drelucas/test-bdd-functional)
