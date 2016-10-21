@@ -8,27 +8,31 @@ Caso não tenham instalado o Ruby e suas dependências podem seguir este tutoria
 
 ### Ferramentas
 Gems utilizadas:
-[Cucumber](https://cucumber.io/)
-[Capybara](https://github.com/jnicklas/capybara)
-[Selenium-webdriver](https://github.com/seleniumhq/selenium)
-[Faker](https://github.com/stympy/faker)
-[Site_prism](https://github.com/natritmeyer/site_prism)
-[Rspec](http://rspec.info/)
-[Rails](http://rubyonrails.org/)
-[Pry](http://pryrepl.org/)
+*[Cucumber](https://cucumber.io/)
+*[Capybara](https://github.com/jnicklas/capybara)
+*[Selenium-webdriver](https://github.com/seleniumhq/selenium)
+*[Faker](https://github.com/stympy/faker)
+*[Site_prism](https://github.com/natritmeyer/site_prism)
+*[Rspec](http://rspec.info/)
+*[Rails](http://rubyonrails.org/)
+*[Pry](http://pryrepl.org/)
 
 Comandos mais utilizados:
 
+```
 =Navigating=
     visit('/projects')
     visit(post_comments_path(post))
+```
 
+```
 =Clicking links and buttons=
     click_link('id-of-link')
     click_link('Link Text')
     click_button('Save')
     click('Link Text') # Click either a link or a button
     click('Button Value')
+```
 
 =Interacting with forms=
     fill_in('First Name', :with => 'John')
