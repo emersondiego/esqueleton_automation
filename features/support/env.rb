@@ -1,8 +1,8 @@
-require "capybara/cucumber"
-require "selenium-webdriver"
-require "site_prism"
-require "faker"
-require "rspec"
+require 'capybara/cucumber'
+require 'selenium-webdriver'
+require 'site_prism'
+require 'faker'
+require 'rspec'
 require 'rails'
 
 Dir[File.dirname(__FILE__) + '/../helpers/*.rb'].each { |f| require f }
