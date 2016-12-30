@@ -6,12 +6,12 @@ Given(/^I access the shopping site$/) do
   home.load_page
 end
 
-When(/^I access the link My Orders$/) do
-  home.click_my_orders
+When(/^I access the link Login to the site$/) do
+  home.click_login_site
 end
 
 Then(/^I valid access the login screen$/) do
-  expect(home.validade_access_orders).to eq('Identificação')
+  expect(home.validade_access_screen_login).to eq('identificação')
 end
 
 

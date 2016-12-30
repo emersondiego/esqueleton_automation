@@ -1,15 +1,16 @@
 module Panel
   class HomeSite < SitePrism::Page
     def load_page
-      visit 'http://www.pontofrio.com.br'
+      visit 'http://www.ricardoeletro.com.br/'
     end
 
-    def click_my_orders
-      click_link('Meus Pedidos')
+    def click_login_site
+      page.find(:css, '#modal .fechar').click
+      click_link('Faça o seu login')
     end
 
-    def validade_access_orders
-       page.find(:css, 'section section.loginMain h2').text
+    def validade_access_screen_login
+      page.find(:css, '#Login .titulo-pagina').text
     end
   end
 end
