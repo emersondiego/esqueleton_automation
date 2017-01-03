@@ -6,7 +6,11 @@ Given(/^I access the shopping site$/) do
   home.load_page
 end
 
-When(/^I access the link Login to the site$/) do
+And(/^I close the email signup popup$/) do
+  home.close_popup
+end
+
+And(/^I access the link Login to the site$/) do
   home.click_login_site
 end
 
