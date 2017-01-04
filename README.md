@@ -6,18 +6,25 @@ Você precisa ter o ruby >= `2.2.0` e  `bundle` instalados
 Caso não tenham instalado o Ruby e suas dependências podem seguir este tutorial:
 [Tutorial](https://github.com/MyPersonalProjects/first-contact)
 
+### Execução
+
+* Firefox: firefox=true cucumber
+
+* Chrome: chrome=true cucumber
+
+
 ### Ferramentas
 Gems utilizadas:
 * [Cucumber](https://cucumber.io/)
 * [Capybara](https://github.com/jnicklas/capybara)
 * [Selenium-webdriver](https://github.com/seleniumhq/selenium)
 * [Faker](https://github.com/stympy/faker)
-* [Site_prism](https://github.com/natritmeyer/site_prism)
 * [Rspec](http://rspec.info/)
 * [Rails](http://rubyonrails.org/)
-* [Pry](http://pryrepl.org/)
+* [ChromeDriver](https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver)
 
-Comandos mais utilizados:
+
+### Comandos mais utilizados:
 
 ```
 =Navigating=

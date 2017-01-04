@@ -1,6 +1,5 @@
 module Panel
-  class HomeSite  #< SitePrism::Page
-    include Capybara::DSL
+  class HomeSite < Generic
     def load_page
       visit 'http://www.ricardoeletro.com.br/'
     end

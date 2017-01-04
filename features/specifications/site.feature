@@ -1,6 +1,6 @@
-Feature: Orders
+Feature: Account
 
-  Scenario: Access my orders
+  Scenario: Access login Account
 
     Given I access the shopping site
     When I close the email signup popup
