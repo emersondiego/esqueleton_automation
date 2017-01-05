@@ -56,6 +56,7 @@ GEM
     chromedriver-helper (1.0.0)
       archive-zip (~> 0.7.0)
       nokogiri (~> 1.6)
+    cliver (0.3.2)
     concurrent-ruby (1.0.4)
     cucumber (2.4.0)
       builder (>= 2.1.2)
@@ -93,6 +94,10 @@ GEM
     nio4r (1.2.1)
     nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
+    poltergeist (1.12.0)
+      capybara (~> 2.1)
+      cliver (~> 0.3.1)
+      websocket-driver (>= 0.2.0)
     public_suffix (2.0.5)
     rack (2.0.1)
     rack-test (0.6.3)
@@ -168,6 +173,7 @@ DEPENDENCIES
   chromedriver-helper
   cucumber
   faker
+  poltergeist
   rails
   rspec
   selenium-webdriver

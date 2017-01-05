@@ -8,9 +8,13 @@ Caso não tenham instalado o Ruby e suas dependências podem seguir este tutoria
 
 ### Execução
 
-* Firefox: firefox=true cucumber
+Realizar as chamadas conforme exemplo
 
-* Chrome: chrome=true cucumber
+* Firefox: FIREFOX=true cucumber
+
+* Chrome: CHROME=true cucumber
+
+* Poltergeist: POLTERGEIST=true cucumber
 
 
 ### Ferramentas
@@ -22,6 +26,7 @@ Gems utilizadas:
 * [Rspec](http://rspec.info/)
 * [Rails](http://rubyonrails.org/)
 * [ChromeDriver](https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver)
+* [Poltergeist](https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver)
 
 
 ### Comandos mais utilizados:

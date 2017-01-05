@@ -8,5 +8,6 @@ gem 'site_prism'
 gem 'rspec'
 gem 'rails'
 gem 'chromedriver-helper'
+gem 'poltergeist'
 
 

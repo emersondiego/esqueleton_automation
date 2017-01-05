@@ -4,11 +4,12 @@ require 'site_prism'
 require 'faker'
 require 'rspec'
 require 'rails'
+require 'capybara/poltergeist'
 
 Dir[File.dirname(__FILE__) + '/../helpers/*.rb'].each { |f| require f }
 include SiteHelpers
 
-if ENV['Firefox']
+if ENV['FIREFOX']
   puts " ================================= "
   puts " = Execution Firefox = "
   puts " ================================= "
@@ -22,7 +23,7 @@ if ENV['Firefox']
   end
   Capybara.page.driver.browser.manage.window.maximize
 
-else ENV['Chrome']
+elsif ENV['CHROME']
   puts " ========================= "
   puts " = Execution Chrome = "
   puts " ========================= "
@@ -32,4 +33,24 @@ else ENV['Chrome']
   end
   Capybara.default_driver = :selenium_chrome
   Capybara.javascript_driver = :chrome
+
+else ENV['POLTERGEIST']
+  puts " ========================= "
+  puts " = Execution Poltergeist = "
+  puts " ========================= "
+  Capybara.register_driver :poltergeist do |app|
+    Capybara::Poltergeist::Driver.new(
+      app,
+      inspector: true,
+      js_errors: false,
+      window_size: [1280, 1024],
+      phantomjs_options: ['--ignore-ssl-errors=yes','--ssl-protocol=tlsv1'],
+      debug: false
+    )
+  end
+  Capybara.default_driver    = :poltergeist
+  Capybara.javascript_driver = :poltergeist
+  Capybara.ignore_hidden_elements = true
 end
+
+Capybara.default_selector = :css
